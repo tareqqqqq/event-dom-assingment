@@ -29,7 +29,7 @@ div.innerHTML=`<div>
 <h1>this is me </h2> </div>`
 
 third ,use appendChild.for example, 
-div.appendChild(div)
+divName.appendChild(div)
 
 
 
@@ -47,10 +47,10 @@ It needs low memory .And Its a dynamic process to add new element on dom .That's
 
 /* What is the difference between preventDefault() and stopPropagation() methods? */
 
- To stop bubbling on a DOM we use  stopPropagation() method.
+ To stop bubbling on a DOM we use  stopPropagation(). method. 
  e.stopPropagation() 
 
- To stop browser's default action we use preventDefault()
+ To stop browser's default action we use preventDefault().
  e.preventDefault()
 
 
