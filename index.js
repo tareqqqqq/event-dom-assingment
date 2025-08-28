@@ -29,7 +29,7 @@ const localTime= new Date().toLocaleString();
     
     const valueDefault=parseInt(document.getElementById('valueDefault').innerText)
 
-    if(valueDefault>Number(20)){
+    if(valueDefault>=Number(20)){
         alert(h1+ " "+h2)
     }
     if(valueDefault<Number(20)){
