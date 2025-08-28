@@ -22,14 +22,13 @@ const divName= document.getElementById("any id name")
 
 
 Second, we are created an element like div, p, h1 by createElement. for example,
-const div=document.createElement("div")
+const p=document.createElement("p")
 
 then insert any element or content by innerText or innerHTML. like,
-div.innerHTML=`<div>
-<h1>this is me </h2> </div>`
+div.innerText="this is me" 
 
 third ,use appendChild.for example, 
-divName.appendChild(div)
+divName.appendChild(p)
 
 
 
@@ -47,10 +46,10 @@ It needs low memory .And Its a dynamic process to add new element on dom .That's
 
 /* What is the difference between preventDefault() and stopPropagation() methods? */
 
- To stop bubbling on a DOM we use  stopPropagation(). method. 
+ To stop bubbling on a DOM we use  stopPropagation(). method. we use this below function: 
  e.stopPropagation() 
 
- To stop browser's default action we use preventDefault().
+ To stop browser's default action we use preventDefault().we use this below function:
  e.preventDefault()
 
 
