@@ -3,7 +3,9 @@
 
 Answer: 
 1.getElementById: To find any specific element from dom for moving webpage better run, we declare any id name on html and get the single element object by getElementById.
+
 2.getElementsByClassName: To find multiple element from dom for doing special work on webpage , we declare matching class name on elements  and get a HtmlCollection array. Its not an array but work on something like array.For doing traversing or delegation, we specially use on this purpose.
+
 3.querySelector: In html file, we declare a same class name in some elements like matching class name. we can select frist class name to return an object by querySelector for doing especial purpose.
 
 4.querySelectorAll: querySelector can select frist class name but querySelectorAll can select all and give a NodeList.
