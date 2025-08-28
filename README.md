@@ -16,12 +16,42 @@ Answer:
 */
 
 Answer: To create and insert a new element into DOM,
-frist, we declare an id name on an element like div , h1, p etc. Its a parent .
+frist, we declare an id name on an element in Html file like div , h1, p etc. Its a parent .Then in js file , we declare the id name by getElementById . For Example,
+
+const divName= document.getElementById("any id name")
+
+
+Second, we are created an element like div, p, h1 by createElement. for example,
+const div=document.createElement("div")
+
+then insert any element or content by innerText or innerHTML. like,
+div.innerHTML=`<div>
+<h1>this is me </h2> </div>`
+
+third ,use appendChild.for example, 
+div.appendChild(div)
 
 
 
 /* What is Event Bubbling and how does it work? */
 
+answer: Event Bubbling means an event happens on a dom tree and reaches the document object until it stops.
+
+It works like when we click  a button  .An event is occured on this button child. then its bubbling and handle its parent element then bubbling grandparent.This process  can happen until it stop. finally it reaches document. but when we use  stopPropagation() method
+Its stopped
+
 /* What is Event Delegation in JavaScript? Why is it useful? */
 
+Answer: Event Delegation means using a parent to manage multiple child elements by event bubbling.  Its not necessary to use addListenerEvent for single child.  only one addListenerEvent can use to manage child .
+It needs low memory .And Its a dynamic process to add new element on dom .That's why its very useful technique.
+
 /* What is the difference between preventDefault() and stopPropagation() methods? */
+
+ To stop bubbling on a DOM we use  stopPropagation() method.
+ e.stopPropagation() 
+
+ To stop browser's default action we use preventDefault()
+ e.preventDefault()
+
+
+
